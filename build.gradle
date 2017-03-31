@@ -52,6 +52,7 @@ configurations {
     documentation
 }
 
+
 dependencies {
     compile "org.liquibase:liquibase-core:$liquibaseVersion"
 
