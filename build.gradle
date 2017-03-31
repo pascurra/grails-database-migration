@@ -56,7 +56,7 @@ configurations {
 dependencies {
     compile "org.liquibase:liquibase-core:$liquibaseVersion"
 
-    compile('com.github.pascurra:liquibase-hibernate:master-SNAPSHOT') {
+    compile('com.github.pascurra:liquibase-hibernate:-SNAPSHOT') {
         exclude group: 'org.hibernate', module: 'hibernate-core'
         exclude group: 'org.hibernate', module: 'hibernate-entitymanager'
         exclude group: 'org.hibernate', module: 'hibernate-envers'
