@@ -37,6 +37,8 @@ repositories {
     mavenLocal()
     mavenCentral()
     maven { url "https://repo.grails.org/grails/core" }
+    maven { url 'https://jitpack.io' }
+
 }
 
 dependencyManagement {
@@ -53,7 +55,7 @@ configurations {
 dependencies {
     compile "org.liquibase:liquibase-core:$liquibaseVersion"
 
-    compile('org.liquibase.ext:liquibase-hibernate5:3.6') {
+    compile('com.github.pascurra:liquibase-hibernate:liquibase-hibernate5-3.6') {
         exclude group: 'org.hibernate', module: 'hibernate-core'
         exclude group: 'org.hibernate', module: 'hibernate-entitymanager'
         exclude group: 'org.hibernate', module: 'hibernate-envers'
