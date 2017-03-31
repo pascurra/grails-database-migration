@@ -55,7 +55,7 @@ configurations {
 dependencies {
     compile "org.liquibase:liquibase-core:$liquibaseVersion"
 
-    compile('com.github.pascurra:grails-database-migration:master-SNAPSHOT') {
+    compile('com.github.pascurra:liquibase-hibernate:test') {
         exclude group: 'org.hibernate', module: 'hibernate-core'
         exclude group: 'org.hibernate', module: 'hibernate-entitymanager'
         exclude group: 'org.hibernate', module: 'hibernate-envers'
